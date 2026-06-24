@@ -1,33 +1,33 @@
 # YouTube Shorts Auto Scroller
 
-Браузерное расширение для Google Chrome, автоматически переключающее видео YouTube Shorts после их завершения.
+A Google Chrome browser extension that automatically scrolls to the next YouTube Shorts video when the current one ends.
 
-## Описание
+## Description
 
-Расширение анализирует воспроизведение видеороликов на YouTube Shorts, отключает зацикливание (loop) и автоматически прокручивает страницу к следующему видео по окончании текущего. Это позволяет просматривать контент в режиме "hands-free".
+This extension detects when a YouTube Shorts video finishes playing, disables its loop attribute, and automatically transitions to the next video. It provides a hands-free viewing experience for YouTube Shorts.
 
-## Основные возможности
+## Features
 
-- Автоматическое определение окончания воспроизведения видео.
-- Имитация нажатия клавиши ArrowDown для перехода к следующему ролику.
-- Резервный механизм плавного скролла к следующему элементу плеера.
-- Быстрое включение и отключение автопрокрутки через всплывающее меню (popup).
-- Сохранение состояния активности расширения в локальном хранилище браузера.
+- Detects the end of video playback.
+- Simulates an ArrowDown keyboard event to trigger the next video.
+- Fallback smooth scrolling to the next video renderer element.
+- Easy toggle (Active/Inactive) via the extension popup menu.
+- Saves the extension state in the browser's local storage.
 
-## Установка
+## Installation
 
-1. Скачайте файлы репозитория в локальную папку.
-2. Откройте Google Chrome и перейдите по адресу: `chrome://extensions/`.
-3. В правом верхнем углу страницы включите "Режим разработчика" (Developer mode).
-4. Нажмите кнопку "Загрузить распакованное расширение" (Load unpacked) в левом верхнем углу.
-5. Выберите папку с загруженными файлами расширения.
+1. Download or clone this repository to a local directory.
+2. Open Google Chrome and navigate to `chrome://extensions/`.
+3. Enable "Developer mode" in the top-right corner.
+4. Click the "Load unpacked" button in the top-left corner.
+5. Select the folder containing the extension files.
 
-## Использование
+## Usage
 
-1. Перейдите на сайт YouTube в раздел Shorts.
-2. После завершения воспроизведения текущего видео страница автоматически прокрутится к следующему.
-3. Для приостановки работы автопрокрутки нажмите на иконку расширения в панели инструментов и переключите переключатель в состояние "Inactive".
+1. Open YouTube and navigate to the Shorts section.
+2. Once the current video ends, the page will automatically scroll to the next one.
+3. To disable auto-scrolling, click the extension icon in the toolbar and switch the toggle to "Inactive".
 
-## Лицензия
+## License
 
-Этот проект распространяется под лицензией MIT. Подробности см. в файле LICENSE.
+This project is licensed under the MIT License. See the LICENSE file for details.
